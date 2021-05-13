@@ -1,0 +1,92 @@
+/*
+Sintaxe:
+seletor { prop : valor; }
+*/
+
+/*
+Seletor de tag: genérico, amplo, pouco específico
+tag { prop : valor; }
+especificidade: 1 (força 1, base, fraco)
+*/
+
+body {
+    background-color: lemonchiffon;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    border: 1px solid red;
+}
+
+h1 {
+    color: red;
+}
+
+/*
+Seletor de classe: customizado, maior controle, reutilizável, composição
+.class { prop : valor; }
+especificidade: 10 (força 10, meio, médio)
+
+*/
+
+.destaque {
+    background-color: mediumvioletred;
+    color: white;
+}
+
+.centralizado {
+    text-align: center;
+    color: royalblue;
+}
+
+.novo {
+   /* color: yellowgreen !important; */
+   background-color: turquoise;
+}
+
+/*
+Seletor de id: customizável, maior controle, muito específico, exclusivo, não é reutilizável
+#id { prop : valor; }
+especificidade: 100 (força 100, topo, forte)
+*/
+
+#titulo {
+    border: 5px double black;
+    text-transform: uppercase;
+    color: tomato;
+    background-color: teal;
+}
+
+/* Composição/Junção de Seletores */
+
+/* 1 + 100 = 101 de força deste seletor */
+h1#titulo {
+    background-color: thistle;
+}
+
+/* 10 + 100 = 110 de força deste seletor */
+.centralizado#titulo {
+    background-color: chartreuse;
+}
+
+/* 1 + 10 + 100 = 111 de força deste seletor */
+h1.centralizado#titulo {
+    background-color: gold;
+}
+
+/* 10 + 10 + 100 = 120 de força deste seletor */
+.centralizado.novo#titulo {
+    background-color: pink;
+}
+
+/* 1 + 10 + 10 + 100 = 121 de força deste seletor */
+h1.centralizado.novo#titulo {
+    background-color: palevioletred;
+}
+
+/* 1 + 1 + 10 + 10 + 100 = 122 de força deste seletor */
+body h1.centralizado.novo#titulo {
+    background-color: green;
+}
+
+

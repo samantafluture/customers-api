@@ -1,0 +1,31 @@
+body {
+    background-color: #dadada;
+}
+
+div {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(225, 65, 206);
+    width: 1200px;
+}
+
+.site-header {
+    height: 130px;
+    background-color: aquamarine;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-main {
+    height: 620px;
+    background-color: rgb(235, 208, 135);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-footer {
+    height: 90px;
+    background-color: aquamarine;
+    margin-left: auto;
+    margin-right: auto;
+}

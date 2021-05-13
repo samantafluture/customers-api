@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview do HTML 5</title>
+    <link rel="stylesheet" href="overview.css">
+</head>
+
+<body>
+    <h1 class="centralizado novo" id="titulo">Overview do HTML 5</h1>
+
+    <h2 class="centralizado">Textos</h2>
+
+    <p class="centralizado">Lorem ipsum dolor, sit amet <b>consectetur adipisicing</b> elit. Corrupti rerum iste <spam>doloribus?</spam> Aperiam laudantium velcum. Ad atque, <i>tenetur iure</i> quam <cite>provident deserunt</cite> ratione, sequi <u>odio ullam</u> velit pariatur doloremque?</p>
+   
+    <p class="destaque centralizado">Lorem ipsum dolor, sit <mark>amet consectetur adipisicing</mark> elit. Voluptates labore <b>placeat necessitatibus</b> perspiciatis <ins>consequuntur</ins> sapiente <i>alias perferendis</i> hic <q>iure assumenda illum, vitae sint nemo</q> eaque, laboriosam repellat, <b><i>voluptatem</i></b> earum veritatis!</p>
+   
+    <p>Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. <em>Enim</em> consequatur <b>eveniet libero aliquam</b> quas amet itaque <i>aliquid quaerat commodi</i> voluptatibus, fugiat quia quae <del>sed</del> totam, sunt <u>officia sequi</u> illum nostrum.</p>
+
+    <h2>Listas</h2>
+
+    <h3>Ordenadas</h3>
+    <p>Estes são os 5 veículos mais vendidos em 2020:</p>
+    <ol>
+        <li>HB20</li>
+        <li>Uno</li>
+        <li>Corsa</li>
+        <li>Celta</li>
+        <li>Fiesta</li>
+    </ol>
+
+    <h3 id="ordenadas">Não Ordenadas</h3>
+    <p>Estas são as tecnologias em evidência em 2020:</p>
+    <ul>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>C++</li>
+        <li>Kotlin</li>
+    </ul>
+
+    <h3>Definição</h3>
+    <dl>
+        <dt>ONU</dt>
+        <dd>A Organização das Nações Unidas é uma entidade global redigida por alguns dos maiores países.</dd>
+    </dl>
+    <dl>
+        <dt>PT</dt>
+        <dd>Lula Livre 2022, é noís.</dd>
+    </dl>
+
+    <h2>Tabelas</h2>
+    <table border="1">
+        <!-- <colgroup>
+            <col width="100">
+            <col width="50">
+            <col width="50">
+            <col width="50">
+        </colgroup> -->
+        <thead>
+            <!-- 1ª linha, cabeçalho -->
+            <tr>
+                <!-- Células -->
+                <th>Classificação</th>
+                <th>P</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>26</td>
+                <td>11</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Palmeiras</td>
+                <td>12</td>
+                <td>10</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Flamengo</td>
+                <td>5</td>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Atualizado dia 6 de Maio de 2021</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Imagens</h2>
+
+    <figure>
+        <img src="http://www.lorempixel.com.br/150/150" alt="imagem aleatória">
+        <figcaption>Este é um meme aleatório.</figcaption>
+    </figure>
+
+    <h2>Hiperlinks</h2>
+    <p>
+        Link relativo: 
+        <a href="intro.html">Ir para Introdução</a>
+    </p>
+    <p>
+        Link absoluto: 
+        <a href="http://agatamarket.com">Comprar</a>
+    </p>
+    <p>
+        Link cego: 
+        <a href="#">Voltar para o topo</a>
+    </p>
+    <p>
+        Link âncora: 
+        <a href="#ordenadas">Ir para Listas Ordenadas</a>
+    </p>
+    <p>
+        Link email: 
+        <a href="mailto:email@gmail.com">email@gmail.com</a>
+    </p>
+
+    <h2>Iframes</h2>
+    <iframe src="intro.html" width="460" height="300" frameborder="1"></iframe>
+    
+    <iframe width="460" height="300" src="https://www.youtube.com/embed/jlT98MZjqfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.850033999885!2d-73.566041!3d45.4728248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9107e8c0f20b5%3A0x4d52cf4ae4ac7f0f!2s422%20Rue%20de%20la%20Poudri%C3%A8re%2C%20Verdun%2C%20QC%20H4G%203K1%2C%20Canad%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1620177456126!5m2!1spt-BR!2sbr" width="460" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <h2>Formulários</h2>
+
+    <form action="intro.html" method="">
+        <fieldset>
+            <legend>SUAS INFORMAÇÕES</legend>
+
+            <label for="">Nome Completo</label><br>
+            <input type="text" placeholder="João Silva" name="nome"><br><br>
+
+            <label for="">Email</label><br>
+            <input type="email" placeholder="email@email.com.br" name="email"><br><br>
+
+            <label for="">Telefone</label><br>
+            <input type="tel" placeholder="00 0000-0000" name="telefone"><br><br>
+
+            <label for="">Quero receber notícias</label><br>
+            <input type="radio"><br><br>
+
+            <button>Salvar</button>
+
+        </fieldset>
+        <fieldset>
+            <legend>PAGAMENTO</legend>
+
+            <label for="">Cartão de Crédito</label><br>
+            <input type="text" placeholder="00000000000"><br><br>
+
+            <label for="">Quantas vezes</label><br>
+            <input type="number" placeholder="1"><br><br>
+
+            <label for="">Recibo</label><br>
+            <input type="checkbox"><br><br>
+
+            <button>Pagar</button>
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
