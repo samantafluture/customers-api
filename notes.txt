@@ -1,0 +1,23 @@
+API DE CLIENTES
+===============
+
+# MASSA DE DADOS
+- https://www.mockaroo.com/
+- https://www.generatedata.com/
+- backend fake
+- gera a "massa", o conteúdo, os dados
+- dados que retornam da API = payload
+
+# API FAKE
+- https://designer.mocky.io/
+- meu endereço: https://run.mocky.io/v3/ea32efab-c290-4fcf-85d9-293fbb84b9cc
+
+# FOR EACH
+- para cada item da lista, extrai o dados
+
+# FILTER
+- itera a array mas com uma condição lógica
+
+# TEMPLATE ENGINE
+- handlebars
+- https://handlebarsjs.com/guide/#what-is-handlebars

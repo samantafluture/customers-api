@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Listagem de Clientes</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="clientes.css">
+</head>
+
+<body>
+  <h1>Listagem de Clientes</h1>
+
+  <table class="pure-table pure-table-bordered">
+    <thead>
+      <tr>
+        <td>#</td>
+        <td>Cliente</td>
+        <td>E-mail</td>
+        <td>Telefone</td>
+        <td>País</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="5">Carregando...</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- template de dados no html Handlebars -->
+  <!-- área para separar o pedaço de html "templatizável" -->
+  <script type="text/template" id="line-table">
+    {{#each customer}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{name}}</td>
+      <td>{{email}}</td>
+      <td>{{phone}}</td>
+      <td>{{country}}</td>
+    </tr>
+    {{/each}}
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="clientes.js"></script>
+
+</body>
+
+</html>
