@@ -1,1 +1,0 @@
-console.log("Isso é um blog!");
